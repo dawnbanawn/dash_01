@@ -47,7 +47,9 @@ def tab3():
         dbc.CardBody([    
             html.Div(children=[   
                 html.Div(children=[
-                    html.Div(children=[          
+                    html.Div(children=[     
+                        html.H6("This is data from the Adventure Works database in two graphs, and a grid showing each data row (editable)."), 
+                        html.Div("",style={"marginBottom": "10px"}),
                         dcc.DatePickerRange(
                             id="date picker",
                             min_date_allowed=aw_data["OrderDate"].min(),

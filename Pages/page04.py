@@ -29,7 +29,7 @@ combined_data["line_style"] = combined_data["OrderDate"].apply(lambda x: "solid"
 def tab4():
     return html.Div([
         dcc.Input(id="hidden_input", style={"display": "none"}),
-        html.H5("This is the original data and 4 months of predicted data, from ML training and forecasting made in Databricks, combined in a line graph.", 
+        html.H6("This is the original data and 4 months of predicted data from the Adventure Works database, from ML training and forecasting made in Databricks, combined in a line graph.", 
                  style={"marginLeft": "50px", "marginTop": "50px"}),                 
 
         dcc.Graph(id="predictionGraph"),
@@ -63,7 +63,7 @@ def plots(value):
         y="Total Sales", 
         color="Region", 
         line_dash="line_style",
-        title="Original and Predicted Total Sales",
+        title="Original and Predicted Total Sales per Region",
         labels={
         "OrderDate": "Order Date",
         "line_style": "Line Type"

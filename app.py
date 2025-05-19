@@ -27,7 +27,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 
 app.layout = html.Div([
     dbc.Tabs([
-        dbc.Tab(tabA(), label="Intro", activeLabelClassName="text-success"),
+        dbc.Tab(tabA(), label="Presentation", activeLabelClassName="text-success"),
         dbc.Tab(tab3(), label="Original Data Visualized", activeLabelClassName="text-success"),
         dbc.Tab(tab4(), label="Original & Predicted Data Visualized", activeLabelClassName="text-success"),
     ], 

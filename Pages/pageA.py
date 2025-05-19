@@ -105,7 +105,6 @@ def tabA():
                                     ),
 
                            html.Div("In Databricks I joined the data, trained SARIMAX forecast models, one for each region, and made predictions with them."),
-                           html.Div("I didn´t spend too much time training the best possible models by, for example, finding the best hyperparameters, because that wasn´t the focus of this project, and there is a cost factor to consider while using resources when making this type of pipeline."),
                            
                             html.Div("",style={"marginBottom": "20px"}),
 
@@ -115,14 +114,17 @@ def tabA():
                                         # id="clickable-image",  # Assign an ID to the image
                                         style={"width": "70vw","marginBottom": "50px", "cursor": "pointer"}
                                     ),
-                            # html.Div("",style={"marginBottom": "20px"}),
 
-                            #     html.Img(
-                            #             src=r'assets/Azure_cost.jpg',
-                            #             alt="Thumbnail",
-                            #             # id="clickable-image",  # Assign an ID to the image
-                            #             style={"width": "70vw","marginBottom": "50px", "cursor": "pointer"}
-                            #         ),
+                           html.Div("I didn´t spend too much time training the best possible models by, for example, finding the best hyperparameters, because that wasn´t the focus of this project, and there is a cost factor to consider while using resources when making this type of pipeline."),
+
+                            html.Div("",style={"marginBottom": "20px"}),
+
+                                html.Img(
+                                        src=r'assets/Azure_cost.jpg',
+                                        alt="Thumbnail",
+                                        # id="clickable-image",  # Assign an ID to the image
+                                        style={"width": "70vw","marginBottom": "50px", "cursor": "pointer"}
+                                    ),
                            html.Div("Four months of predictions were saved to a silver layer in Data Lake Storage V2."),
                             html.Div("",style={"marginBottom": "20px"}),
 
