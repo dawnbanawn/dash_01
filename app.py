@@ -43,7 +43,7 @@ app.layout = html.Div([
 
 # if __name__ == '__main__':
 #     app.run(debug=False)
-
+server = app.server  # Expose Flask instance explicitly for Gunicorn
 if __name__ == "__main__":
     app.run_server(debug=True, host="0.0.0.0", port=8000)
 # gunicorn --bind=0.0.0.0 --timeout 600 app:server
