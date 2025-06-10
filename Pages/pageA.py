@@ -138,16 +138,16 @@ def tabA():
 
 
 
-                           html.Div("With a python script and SQL queries I fetched both original and predicted data to this dash app, as local .csv files."),
-                            html.Div("",style={"marginBottom": "20px"}),
+                           html.Div("With a python script and SQL queries I fetched both original and predicted data to this dash app, as local .csv files. I then created the rest of this app to visualize the data."),
+                            # html.Div("",style={"marginBottom": "20px"}),
 
-                                html.Img(
-                                        src=r'assets/codeA - Copy.jpg',
-                                        alt="Thumbnail",
-                                        # id="clickable-image",  # Assign an ID to the image
-                                        style={"width": "70vw","marginBottom": "50px", "cursor": "pointer"}
-                                    ),
-                           html.Div("I then created the rest of this app to visualize the data."),
+                            #     html.Img(
+                            #             src=r'assets/codeA - Copy.jpg',
+                            #             alt="Thumbnail",
+                            #             # id="clickable-image",  # Assign an ID to the image
+                            #             style={"width": "70vw","marginBottom": "50px", "cursor": "pointer"}
+                            #         ),
+                        #    html.Div(""),
                             html.Div("",style={"marginBottom": "20px"}),
                            html.Div("There are plenty of ways to improve this pipeline, tables can be joined earlier, there are ways to transfer data directly from SQL Server into Databricks removing the need for Data Factory, Microsoft Fabric has probably new ways to do this, and the ML can be improved in many ways, more EDA to find outliers, more granular data."),
                             html.Div("",style={"marginBottom": "20px"}),
